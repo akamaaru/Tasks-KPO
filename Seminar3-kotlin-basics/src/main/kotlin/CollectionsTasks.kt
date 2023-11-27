@@ -3,9 +3,20 @@
  *  (1 балл)
  */
 fun replaceElements(array: List<String>): List<String> {
-    return listOfNotNull()
-}
+    val found: MutableList<String> = mutableListOf()
+    val result: MutableList<String> = mutableListOf()
 
+    for (i in array.indices) {
+        if (found.contains(array[i])) {
+            result.add("blahblah")
+        } else {
+            result.add(array[i])
+            found.add(array[i])
+        }
+    }
+
+    return result
+}
 
 /**
  *  Задание 2: Вернуть количество уникальных слов в строке.
@@ -13,15 +24,17 @@ fun replaceElements(array: List<String>): List<String> {
  *  (1 балл)
  */
 fun uniqueWords(text: String): Int {
-    return 0
+    val count: Int = 0
+    val words = text.split("\\s+".toRegex())
+    return words.distinct().size
 }
 
 // Используйте эту функцию для запуска кода
 // Раскомментируйте нужные участки в процессе реализации
 fun main() {
-    //val text = ""
-    //println(uniqueWords(text))
+    val text = readln()
+    println(uniqueWords(text))
 
     // Вызвать для text и вывести результат замены на экран
-    //replaceElements()
+    println(replaceElements(text.split("\\s+".toRegex())))
 }
