@@ -30,4 +30,5 @@ fun main(args: Array<String>) {
 
     // Теперь тут будет ошибка компиляции
     //penguin.fly()
+    penguin.swim()
 }

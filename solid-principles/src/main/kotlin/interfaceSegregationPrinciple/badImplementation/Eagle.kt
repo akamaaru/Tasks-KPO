@@ -1,7 +1,7 @@
 package interfaceSegregationPrinciple.badImplementation
 
 
-class Eagle(var numberOfFeathers: Int): Bird, FlyingBird {
+class Eagle(var numberOfFeathers: Int): FlyingBird {
     var currentLocation: String? = null
 
     override fun fly() {
