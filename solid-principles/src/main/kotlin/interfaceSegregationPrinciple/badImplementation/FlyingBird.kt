@@ -1,6 +1,5 @@
 package interfaceSegregationPrinciple.badImplementation
 
-
-interface Bird {
-    fun looseFeathers()
+interface FlyingBird {
+    fun fly()
 }

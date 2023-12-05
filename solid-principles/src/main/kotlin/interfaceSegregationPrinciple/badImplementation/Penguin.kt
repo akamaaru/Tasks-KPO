@@ -8,10 +8,6 @@ class Penguin(var numberOfFeathers: Int) : Bird {
         numberOfFeathers -= 1
     }
 
-    override fun fly() {
-        throw UnsupportedOperationException()
-    }
-
     fun swim() {
         currentLocation = "in the water"
     }
