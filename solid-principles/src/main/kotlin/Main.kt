@@ -4,11 +4,14 @@ import dependencyInversionPrinciple.badImplementation.WeatherTracker
 import interfaceSegregationPrinciple.badImplementation.Eagle
 import interfaceSegregationPrinciple.badImplementation.Penguin
 import openClosedPrinciple.badImplementation.EmailGreeting
+import openClosedPrinciple.badImplementation.FormalEmailGreeting
 
 
-fun main(args: Array<String>) {
+fun main() {
     // ЗАДАНИЕ 1: Приветствие
-    val greeting: EmailGreeting = EmailGreeting("formal")
+
+//    val greeting: EmailGreeting = EmailGreeting("formal")
+    val greeting: EmailGreeting = FormalEmailGreeting()
     require(greeting.greeting == "Good evening, sir.") {
         "Wrong message intro"
     }
