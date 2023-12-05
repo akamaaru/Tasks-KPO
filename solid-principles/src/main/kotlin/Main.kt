@@ -14,7 +14,7 @@ fun main(args: Array<String>) {
     }
 
     // ЗАДАНИЕ 2: Уведомления о погоде
-    val tracker = WeatherTracker(phone = Phone(), emailer = Emailer(), conditions = "sunny")
+    val tracker = WeatherTracker(messenger1 = Phone(), messenger2 = Emailer(), conditions = "sunny")
 
     // let's get a phone notification
     tracker.setCurrentConditions("rainy")
